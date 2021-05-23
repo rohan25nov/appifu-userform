@@ -4,8 +4,6 @@ import { Form, Container, Row, Col, Table, thead, tr, td } from "react-bootstrap
 import { CustomTextbox } from './components/CustomTextbox'
 import { CustomTextarea } from './components/CustomTextarea'
 import { CustomButton } from './components/CustomButton'
-import './App.css';
-
 
 function App() {
   const [jsonData, setJsonData] = useState({

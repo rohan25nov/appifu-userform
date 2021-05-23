@@ -1,14 +1,7 @@
 import {Form} from 'react-bootstrap'
 
 export const CustomTextbox = (props) => {
-    // const fieldChanged = (newValue) =>{
-    //     onValueChange(currentValues => {currentValues[sequence] = newValue;
-    //                                     return currentValues
-    //                                 })
-    //     console.log(value)
-    // }
-    console.log(props.matchingWords)
-    return (
+  return (
         <Form.Group style={{ marginTop: "10px" }}>
               <Form.Label>{props.label} <span style={{color:'red'}}>*</span></Form.Label>
               <Form.Control type={props.type} 
