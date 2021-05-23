@@ -1,4 +1,4 @@
-# Appity - userform
+# Appify - userform
 
 ReactJS app that takes the user informations like name, date of birth and address and store it inside the local/browser storage.
 
