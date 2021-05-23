@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Appity - userform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ReactJS app that takes the user informations like name, date of birth and address and store it inside the local/browser storage.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Extra Dependencies 
 
-### `npm start`
+Bootstrap (For responsive & beautification)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Specification Requirements 
+### Task:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Create a dynamic web form to accept inputs of various field types and save it to the browser database.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Guidelines:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Must use React JS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create different components like Textbox, Number, DatePicker, Button etc
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a dynamic form by using the below json (add more fields if required). Choose appropriate styling for each type. 
 
-### `npm run eject`
+After entering the data on the form and saving it, the data should be persisted to the browser database.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Use the below JSON to paint the screen
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+` {"title":"Create Account","form":{"fields":[{"label":"Name","id":"name","type":"textbox","sequence":1},{"label":"DOB","id":"dob","type":"date","sequence":2},{"label":"Address","id":"address","type":"textarea","sequence":3}]}} `
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Special Case:  
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After entering 3 characters on text fields, display list of matching words(limit to 10) by invoking datamuse api https://www.datamuse.com/api/
